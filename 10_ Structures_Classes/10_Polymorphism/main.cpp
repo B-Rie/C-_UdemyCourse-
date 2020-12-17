@@ -7,6 +7,7 @@ void voiceOfAnimal(Animal *);
 void voiceOfAnimal(Animal &);
 int main(){
 
+    Animal animal;
     Dog dog;
     Cat cat;
     Cow cow;

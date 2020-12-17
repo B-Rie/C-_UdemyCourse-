@@ -10,7 +10,7 @@ class Animal{
         public:
             Animal();
             ~Animal();
-            virtual string getVoice() = 0;
+            virtual string getVoice() = 0;  // - Virtual Function
 };
 
 class Dog : public Animal{
@@ -18,7 +18,7 @@ class Dog : public Animal{
         public:
             Dog();
             ~Dog();
-            string getVoice() { return voice + " " + sign; }
+            string getVoice() override { return voice + " " + sign; }
 };
 
 class Cat : public Animal{
@@ -26,7 +26,7 @@ class Cat : public Animal{
         public:
             Cat();
             ~Cat();
-            string getVoice() { return voice  + " " +  sign; }
+            string getVoice() override { return voice  + " " +  sign; }
 };
 
 class Cow : public Animal{
@@ -34,7 +34,7 @@ class Cow : public Animal{
         public:
             Cow();
             ~Cow();
-            string getVoice() { return voice  + " " +  sign; }
+            string getVoice() override { return voice  + " " +  sign; }
 };
 
 #endif // FARM_H_INCLUDED

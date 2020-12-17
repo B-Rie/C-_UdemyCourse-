@@ -1,30 +1,26 @@
 #include "farm.h"
 
 
-Animal::~Animal(){
+Animal::Animal(){
 
+	voice = "default value";
 }
+Animal::~Animal() { }
 
 Dog::Dog(){
     sign = "D";
     voice = "hau";
 }
-Dog::~Dog(){
-
-}
+Dog::~Dog(){ }
 
 Cat::Cat(){
     sign = "C";
     voice = "meow";
 }
-Cat::~Cat(){
-
-}
+Cat::~Cat(){ }
 
 Cow::Cow(){
     sign = "CO";
     voice = "moooo";
 }
-Cow::~Cow(){
-
-}
+Cow::~Cow(){ }
