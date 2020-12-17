@@ -1,21 +1,21 @@
 #ifndef POINT_H_INCLUDED
 #define POINT_H_INCLUDED
 
-class Point{ // - Parent
-    protected:
+class Point { // - Parent
+    protected:  // - allows inherited classes to use private variables from Parents
         int x;
     public:
-        Point(int =0);
+        Point(int = 0);
         ~Point();
         int getX() { return x; }
         void setX(int);
 };
 
-class Point2D : public Point{ // - Child
+class Point2D : public Point { // - Child
     protected:
         int y;
     public:
-        Point2D(int =0, int =0);
+        Point2D(int = 0, int = 0);  // - setting defualt value for int = 0
         ~Point2D();
         int getY() { return y; }
         void setY(int);
